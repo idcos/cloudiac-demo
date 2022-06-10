@@ -18,6 +18,9 @@ apply:
     - type: terraformPlan
       name: "Terraform Plan"
       
+    - type: opaScan
+      name: "Policy Scan"
+      
     - type: terraformApply
       name: Terraform Apply
 
