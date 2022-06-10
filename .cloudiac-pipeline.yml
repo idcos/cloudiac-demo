@@ -13,6 +13,7 @@ apply:
       args: 
         - echo Replacing !!!CLOUDIAC_USERNAME!!! with $CLOUDIAC_USERNAME in index.html
         - sed 's/!!!CLOUDIAC_USERNAME!!!/'"$CLOUDIAC_USERNAME"'/g' index.template.html > index.html
+        - echo $AWS_SECRET_ACCESS_KEY
 
     - type: terraformPlan
       name: "Terraform Plan"
